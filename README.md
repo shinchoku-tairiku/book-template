@@ -1,4 +1,4 @@
-# 進捗大陸 bool-template
+# 進捗大陸 book-template
 
 ## ビルド方法
 
