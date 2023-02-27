@@ -10,11 +10,11 @@ all: build-content-docker combine-docker
 
 .PHONY: build-content-docker
 build-content-docker:
-	docker run --rm -it --mount type=bind,source="$(shell pwd)",target=/workspace "$(SATYSFI_IMAGE)" make build-content
+	docker run --rm --mount type=bind,source="$(shell pwd)",target=/workspace "$(SATYSFI_IMAGE)" make build-content
 
 .PHONY: combine-docker
 combine-docker:
-	docker run --rm -it --mount type=bind,source="$(shell pwd)",target=/workspace "$(PDFTOOLS_IMAGE)" make combine
+	docker run --rm --mount type=bind,source="$(shell pwd)",target=/workspace "$(PDFTOOLS_IMAGE)" make combine
 
 .PHONY: shell-docker
 shell-docker:
