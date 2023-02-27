@@ -1,0 +1,14 @@
+name: Build a book
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make docker
+      - run: make
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output/book-template-artifact.pdf
+          path: output/book-template-artifact.pdf

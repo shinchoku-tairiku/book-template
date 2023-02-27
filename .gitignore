@@ -1,0 +1,6 @@
+.satysfi/dist/fonts
+
+*.satysfi-aux
+
+/output/*.pdf
+/cover.xcf

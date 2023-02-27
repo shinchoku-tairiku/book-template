@@ -1,0 +1,13 @@
+@require: class-shinchoku-tairiku/shinchoku-tairiku
+
+@import: author1/main
+@import: credit
+
+document '<
+  +p{
+    book-template用のほん。
+  }
+> '<
+  +author1;
+  +credit;
+>
