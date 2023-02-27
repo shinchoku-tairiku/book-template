@@ -42,8 +42,8 @@ docker: docker-build-builder docker-build-pdftools
 
 .PHONY: docker-build-builder
 docker-build-builder:
-	docker build -t shinchoku-tairiku-builder -f dockerfiles/Dockerfile.builder .
+	docker build -t "$(SATYSFI_IMAGE)" -f dockerfiles/Dockerfile.builder .
 
 .PHONY: docker-build-pdftools
 docker-build-pdftools:
-	docker build -t shinchoku-tairiku-pdftools:latest -f dockerfiles/Dockerfile.pdftools .
+	docker build -t "$(PDFTOOLS_IMAGE)" -f dockerfiles/Dockerfile.pdftools .
